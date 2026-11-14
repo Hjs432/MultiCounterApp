@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部栏菜单：仅一个加号按钮，点击后弹出下拉菜单 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_menu"
+        android:icon="@drawable/ic_add"
+        android:title="@string/action_add_counter"
+        app:showAsAction="always" />
+
+</menu>

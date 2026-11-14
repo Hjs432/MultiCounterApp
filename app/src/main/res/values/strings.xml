@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">多计数器</string>
+
+    <!-- 默认计数器与自动命名 -->
+    <string name="default_counter_name">计数器一</string>
+    <string name="counter_name_prefix">计数器%1$d</string>
+
+    <!-- 右上角加号下拉菜单 -->
+    <string name="action_add_counter">添加计数器</string>
+    <string name="action_rename">修改名称</string>
+    <string name="action_rename_exit">退出修改模式</string>
+    <string name="action_delete">删除计数器</string>
+    <string name="action_delete_exit">退出删除模式</string>
+
+    <!-- 卡片按钮 -->
+    <string name="btn_count">计数</string>
+    <string name="btn_reset">清零</string>
+
+    <!-- 弹窗文案 -->
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+    <string name="dialog_add_title">添加计数器</string>
+    <string name="hint_add_count">新增个数</string>
+    <string name="helper_add_count">可输入 1 ~ 100</string>
+    <string name="error_add_count">请输入 1 ~ 100 之间的整数</string>
+
+    <string name="dialog_rename_title">修改名称</string>
+    <string name="hint_counter_name">计数器名称</string>
+    <string name="error_name_empty">名称不能为空</string>
+
+    <string name="dialog_reset_title">清零确认</string>
+    <string name="dialog_reset_message">确定要将「%1$s」重置为 0 吗？</string>
+
+    <string name="dialog_delete_title">删除确认</string>
+    <string name="dialog_delete_message">确定要删除「%1$s」吗？删除后无法恢复。</string>
+
+    <!-- 提示 -->
+    <string name="tip_last_counter">至少要保留一个计数器，无法删除</string>
+    <string name="tip_edit_mode">修改模式：点击卡片名称即可改名</string>
+    <string name="tip_delete_mode">删除模式：点击卡片即可删除</string>
+    <string name="tip_mode_exit">已退出管理模式</string>
+
+    <!-- 底部倒计时 -->
+    <string name="timer_start">开始</string>
+    <string name="timer_resume">继续</string>
+    <string name="timer_pause">暂停</string>
+    <string name="timer_clear">清零</string>
+    <string name="dialog_timer_title">设置倒计时</string>
+    <string name="timer_unit_minute">分</string>
+    <string name="timer_unit_second">秒</string>
+    <string name="tip_timer_zero">请先点击圆球设置倒计时时间</string>
+    <string name="tip_timer_finished">倒计时结束</string>
+</resources>

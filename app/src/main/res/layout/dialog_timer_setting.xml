@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 倒计时设置弹窗：分钟 + 秒 两个滚轮 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="8dp">
+
+    <NumberPicker
+        android:id="@+id/picker_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/timer_unit_minute"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="16sp" />
+
+    <NumberPicker
+        android:id="@+id/picker_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/timer_unit_second"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="16sp" />
+
+</LinearLayout>

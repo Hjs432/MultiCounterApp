@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material3 浅色主题配色：带冷色调的高级中性色 + 深靛蓝主色 -->
+    <color name="md_primary">#4756D7</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#E6E9FF</color>
+    <color name="md_on_primary_container">#131D6E</color>
+
+    <color name="md_surface">#FBFBFE</color>
+    <color name="md_surface_container">#FFFFFF</color>
+    <color name="md_on_surface">#17181D</color>
+    <color name="md_on_surface_variant">#565761</color>
+    <color name="md_outline">#767680</color>
+    <color name="md_error">#BA1A1A</color>
+
+    <!-- 卡片发丝描边：扁平化的高级感靠 1dp 细线而非阴影 -->
+    <color name="md_hairline">#E8E8F0</color>
+
+    <!-- 倒计时圆球：进行中的翡翠绿 -->
+    <color name="timer_running">#2E9E68</color>
+</resources>

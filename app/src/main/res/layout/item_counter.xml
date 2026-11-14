@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 单张计数器卡片：名称 -> 大号计数窗口 -> 计数 / 清零按钮 -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/md_surface_container"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="0dp"
+    app:rippleColor="@color/md_primary_container"
+    app:strokeColor="@color/md_hairline"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="18dp">
+
+        <!-- 计数器名称 -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="3dp"
+            android:letterSpacing="0.01"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="计数器一" />
+
+        <!-- 大号加粗计数窗口 -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:fontFeatureSettings="tnum"
+            android:gravity="center"
+            android:letterSpacing="-0.02"
+            android:maxLines="1"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="46sp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="46sp"
+            app:autoSizeMinTextSize="16sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            tools:text="0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_count"
+                style="@style/Widget.MultiCounter.Button.Count"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="@string/btn_count" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reset"
+                style="@style/Widget.MultiCounter.Button.Reset"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/btn_reset" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
